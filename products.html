@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+     
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .navbar nav a:hover {
+            text-decoration: underline;
+        }
+
+    
+        .products-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .products-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .product-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .product-item button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-item button:hover {
+            background-color: #555;
+        }
+
+      
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">
+            <h1>Overclock Zone</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="products.html">Produtos</a>
+            <a href="cart.html">Carrinho</a>
+            <a href="login.html">Entrar</a>
+        </nav>
+    </header>
+
+
+    <main class="products-container">
+        <h2>Produtos Disponíveis</h2>
+        <div class="product-grid">
+            
+            <div class="product-item">
+                <img src="img/produto2.jpg" alt="Monitor Gamer">
+                <h3>Monitor Gamer</h3>
+                <p>R$ 1.200,00</p>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+
+
+                <img src="img/produto5.jpg" alt="MousePad Gamer">
+                <h3>Mousepad Gamer estilo Control</h3>
+                <p>R$ 300,00</p>
+                <button onclick="addToCart(5)">Adicionar ao Carrinho</button>
+                
+                                                   
+               
+            </div>
+            
+         
+            <div class="product-item">
+                <img src="img/produto3.jpg" alt="Teclado Mecânico">
+                <h3>Teclado Mecânico</h3>
+                <p>R$ 300,00</p>
+                <button onclick="addToCart(2)">Adicionar ao Carrinho</button>
+
+                <img src="img/produto6.jpg" alt="Controle Gamer">                    
+                <h3>RTX 4070 TI Super</h3>                    
+                <p>R$ 4.580,00</p>                    
+                <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+                
+            </div>
+           
+            <div class="product-item">
+                <img src="img/produto4.jpg" alt="Mouse Gamer Wireless">
+                <h3>Mouse Gamer Wireless</h3>
+                <p>R$ 350,00</p>
+                <button onclick="addToCart(4)">Adicionar ao Carrinho</button>
+
+                <img src="img/produto1.jpg" alt="Headset Gamer">
+                <h3>Headset Gamer</h3>
+                <p>R$ 250,00</p>
+                <button onclick="addToCart(3)">Adicionar ao Carrinho</button>
+            </div>
+            
+            
+        </div>
+    </main>
+
+   
+    <footer>
+        <p>Overclock Zone © 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    
+    <script src="js/products.js"></script>
+</body>
+</html>

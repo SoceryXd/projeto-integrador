@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overclock Zone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+    <header class="navbar">
+        <div class="logo">
+            <h1>Overclock Zone</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="products.html">Produtos</a>
+            <a href="cart.html">Carrinho</a>
+            <a href="login.html">Entrar</a>
+        </nav>
+    </header>
+
+  
+    <section class="banner">
+        <h2>Antecipe a Black Friday!</h2>
+        <p>Descontos de até 80% e frete grátis*</p>
+        <a href="products.html" class="btn">Compre agora</a>
+    </section>
+
+   
+    <section class="products">
+        <h2>Produtos em Destaque</h2>
+        <div class="product-grid">
+            
+            <div class="product-item">
+                <img src="img/produto2.jpg" alt="Monitor Gamer">
+                <h3>Monitor Gamer</h3>
+                <p>R$ 1.200,00</p>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="img/produto3.jpg" alt="Teclado Mecânico">
+                <h3>Teclado Mecânico</h3>
+                <p>R$ 300,00</p>
+                <button onclick="addToCart(2)">Adicionar ao Carrinho</button>
+            </div>
+           
+            <div class="product-item">
+                <img src="img/produto1.jpg" alt="Headset Gamer">
+                <h3>Headset Gamer</h3>
+                <p>R$ 250,00</p>
+                <button onclick="addToCart(3)">Adicionar ao Carrinho</button>
+            </div>
+           
+            <div class="product-item">
+                <img src="img/produto4.jpg" alt="Mouse Gamer Wireless">
+                <h3>Mouse Gamer Wireless</h3>
+                <p>R$ 350,00</p>
+                <button onclick="addToCart(4)">Adicionar ao Carrinho</button>
+            </div>
+           
+            <div class="product-item">
+                <img src="img/produto5.jpg" alt="Cadeira Gamer">
+                <h3>Mousepad Gamer 450x450 estilo control</h3>
+                <p>R$ 300,00</p>
+                <button onclick="addToCart(5)">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="img/produto6.jpg" alt="Controle Gamer">
+                <h3>RTX 4070 TI Super</h3>
+                <p>R$ 4.580,00</p>
+                <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>Overclock Zone © 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
