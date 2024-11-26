@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Produtos - Overclock Zone</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h2>Overclock Zone</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="admin.dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="admin.products.html" class="active"><i class="fa-solid fa-box"></i> Produtos</a></li>
+                    <li><a href="admin.orders.html"><i class="fa-solid fa-receipt"></i> Pedidos</a></li>
+                    <li><a href="admin.users.html"><i class="fa-solid fa-users"></i> Usuários</a></li>
+                    <li><a href="admin.settings.html"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+                    <li><a href="logout.html"><i class="fa-solid fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Gerenciar Produtos</h1>
+            </header>
+
+            <section>
+                <button class="btn-add">Adicionar Produto</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Preço</th>
+                            <th>Estoque</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>RTX 3080</td>
+                            <td>R$ 4.500,00</td>
+                            <td>25</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Processador i9 13900KF</td>
+                            <td>R$ 3.200,00</td>
+                            <td>10</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

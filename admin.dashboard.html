@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Overclock Zone</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- Adicione bibliotecas CSS para ícones e gráficos, se necessário -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <h2>Overclock Zone</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="admin.dashboard.html" class="active"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                    <li><a href="admin.products.html"><i class="fa-solid fa-box"></i> Produtos</a></li>
+                    <li><a href="admin.orders.html"><i class="fa-solid fa-receipt"></i> Pedidos</a></li>
+                    <li><a href="admin.users.html"><i class="fa-solid fa-users"></i> Usuários</a></li>
+                    <li><a href="admin.settings.html"><i class="fa-solid fa-gear"></i> Configurações</a></li>
+                    <li><a href="logout.html"><i class="fa-solid fa-sign-out-alt"></i> Sair</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <div class="admin-profile">
+                    <img src="profile."jpg" alt="Admin Profile">
+                    <span>Administrador</span>
+                </div>
+            </header>
+
+            <section class="stats">
+                <div class="stat-card">
+                    <i class="fa-solid fa-box"></i>
+                    <div>
+                        <h3>120</h3>
+                        <p>Produtos</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-receipt"></i>
+                    <div>
+                        <h3>85</h3>
+                        <p>Pedidos</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>200</h3>
+                        <p>Usuários</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <div>
+                        <h3>$12,500</h3>
+                        <p>Receita</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-activities">
+                <h2>Atividades Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Atividade</th>
+                            <th>Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Usuário <b>João Silva</b> realizou uma compra</td>
+                            <td>26/11/2024</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Produto <b>Placa de Vídeo RTX 3090 TI </b> foi adicionado</td>
+                            <td>25/11/2024</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Usuário <b>Maria Souza</b> se cadastrou</td>
+                            <td>24/11/2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
