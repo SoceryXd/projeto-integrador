@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Gerenciar Usuários</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="scripts/admin.js" defer></script>
+</head>
+<body>
+   
+    <nav class="admin-navbar">
+        <div class="logo">Overclock Zone - Admin</div>
+        <ul>
+            <li><a href="admin.dashboard.html">Dashboard</a></li>
+            <li><a href="admin.products.html">Produtos</a></li>
+            <li><a href="admin.users.html" class="active">Usuários</a></li>
+            <li><a href="admin.orders.html">Pedidos</a></li>
+            <li><a href="admin.settings.html">Configurações</a></li>
+            <li><a href="logout.html">Sair</a></li>
+        </ul>
+    </nav>
+
+ 
+    <main class="admin-main">
+        <h1>Gerenciar Usuários</h1>
+
+      
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar usuários por nome ou e-mail..." id="searchInput">
+            <button onclick="searchUser()">Buscar</button>
+        </div>
+
+      
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Data de Cadastro</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+             
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>joao.silva@email.com</td>
+                    <td>2024-01-15</td>
+                    <td>
+                        <button class="btn-edit" onclick="editUser(1)">Editar</button>
+                        <button class="btn-delete" onclick="deleteUser(1)">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Santos</td>
+                    <td>maria.santos@email.com</td>
+                    <td>2024-03-22</td>
+                    <td>
+                        <button class="btn-edit" onclick="editUser(2)">Editar</button>
+                        <button class="btn-delete" onclick="deleteUser(2)">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

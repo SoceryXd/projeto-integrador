@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Configurações</title>
+    <link rel="stylesheet" href="css/admins.css">
+    <script src="scripts/admins.js" defer></script>
+</head>
+<body>
+    
+    <nav class="admin-navbar">
+        <div class="logo">Overclock Zone - Admin</div>
+        <ul>
+            <li><a href="admin.dashboard.html">Dashboard</a></li>
+            <li><a href="admin.products.html">Produtos</a></li>
+            <li><a href="admin.users.html">Usuários</a></li>
+            <li><a href="admin.orders.html">Pedidos</a></li>
+            <li><a href="admin.settings.html" class="active">Configurações</a></li>
+            <li><a href="logout.html">Sair</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="admin-main">
+        <h1>Configurações Gerais</h1>
+
+        
+        <section class="settings-section">
+            <h2>Tema do Site</h2>
+            <label>
+                <input type="radio" name="theme" value="light" checked>
+                Tema Claro
+            </label>
+            <label>
+                <input type="radio" name="theme" value="dark">
+                Tema Escuro
+            </label>
+            <button onclick="saveTheme()">Salvar Tema</button>
+        </section>
+
+        <section class="settings-section">
+            <h2>Informações da Loja</h2>
+            <form id="storeInfoForm">
+                <label for="storeName">Nome da Loja:</label>
+                <input type="text" id="storeName" placeholder="Digite o nome da loja" value="Overclock Zone">
+
+                <label for="storeEmail">E-mail de Contato:</label>
+                <input type="email" id="storeEmail" placeholder="Digite o e-mail" value="contato@overclockzone.com">
+
+                <label for="storePhone">Telefone:</label>
+                <input type="text" id="storePhone" placeholder="Digite o telefone" value="+55 11 99999-9999">
+
+                <button type="button" onclick="saveStoreInfo()">Salvar Informações</button>
+            </form>
+        </section>
+
+        <section class="settings-section">
+            <h2>Segurança</h2>
+            <button onclick="resetAdminPassword()">Redefinir Senha de Administrador</button>
+        </section>
+    </main>
+</body>
+</html>
