@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,16 +6,16 @@
     font-family: Arial, sans-serif;
 }
 
-/* Container geral */
+
 .dashboard-container {
     display: flex;
     min-height: 100vh;
     background-color: #f4f4f9;
 }
 
-/* Sidebar */
+
 .sidebar {
-    background-color: #1e293b;
+    background-color: #0c4479;
     color: #fff;
     width: 250px;
     padding: 20px;
@@ -30,7 +30,7 @@
 
 .sidebar .brand h2 {
     font-size: 24px;
-    color: #61dafb;
+    color: #f7a000;
 }
 
 .sidebar nav ul {
@@ -53,15 +53,15 @@
 
 .sidebar nav ul li a:hover,
 .sidebar nav ul li a.active {
-    background-color: #334155;
-    color: #fff;
+    background-color: #33554e;
+    color: #f7a000;
 }
 
 .sidebar nav ul li a i {
     margin-right: 10px;
 }
 
-/* Main Content */
+
 .main-content {
     flex: 1;
     padding: 20px;
@@ -96,7 +96,7 @@ header .admin-profile span {
     color: #334155;
 }
 
-/* Stats Section */
+
 .stats {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -120,7 +120,7 @@ header .admin-profile span {
 
 .stat-card i {
     font-size: 30px;
-    color: #61dafb;
+    color: #051c5c;
     margin-right: 15px;
 }
 
@@ -133,7 +133,7 @@ header .admin-profile span {
     color: #6b7280;
 }
 
-/* Recent Activities */
+
 .recent-activities {
     background-color: #ffffff;
     border-radius: 8px;
@@ -169,7 +169,7 @@ header .admin-profile span {
     background-color: #f1f5f9;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .sidebar {
         width: 200px;
