@@ -1,8 +1,8 @@
 
 const products = [
-    { id: 1, name: 'Monitor Gamer', price: 1200.00 },
-    { id: 2, name: 'Teclado Mecânico', price: 300.00 },
-    { id: 3, name: 'Headset Gamer', price: 250.00 }
+    { id: 1, name: 'Monitor Gamer', price: 1200.00, image: 'img/produto2.jpg' },
+    { id: 2, name: 'Teclado Mecânico', price: 300.00, image:'img/produto3.jpg' },
+    { id: 3, name: 'Headset Gamer', price: 250.00, image:'img/produto1.jpg' },
 ];
 
 

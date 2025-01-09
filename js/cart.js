@@ -22,6 +22,7 @@ class Cart {
 
         Cart.items.forEach((item, index) => {
             const cartItemElement = document.createElement("div");
+            const totalPrice = item.price.toFixed(2) * item.quantity;
             cartItemElement.classList.add("cart-item");
             cartItemElement.innerHTML = `
                 <div class="cart-item-info">
@@ -33,12 +34,12 @@ class Cart {
                     </div>
                 </div>
                 <div class="cart-item-actions">
-                    <span>R$ ${item.total.toFixed(2)}</span>
+                    <span>R$ ${totalPrice.toFixed(2)}</span>
                     <button onclick="Cart.removeItem(${index})">🗑️</button>
                 </div>
             `;
             cartItemsContainer.appendChild(cartItemElement);
-            total += item.total;
+            total += totalPrice;
         });
 
         cartTotal.innerText = `R$ ${total.toFixed(2)}`;
