@@ -1,23 +1,17 @@
 <?php
-// Configuração de conexão com o banco de dados
-class Database {
-    private $host = 'localhost';
-    private $db_name = 'overclock_zone';
-    private $username = 'root';
-    private $password = '';
-    public $conn;
 
-    public function getConnection() {
-        $this->conn = null;
+$host = 'localhost';  // Endereço do servidor de banco de dados
+$db = 'overclock_zone';     // Nome do banco de dados
+$user = 'root';        // Usuário do banco de dados
+$pass = '';            // Senha do banco de dados
 
-        try {
-            $this->conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->db_name, $this->username, $this->password);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (PDOException $exception) {
-            echo "Erro na conexão com o banco de dados: " . $exception->getMessage();
-        }
-
-        return $this->conn;
-    }
+try {
+    // Conectando ao banco de dados
+    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  // Habilita modo de erro
+} catch (PDOException $e) {
+    // Caso ocorra algum erro na conexão
+    echo 'Erro ao conectar: ' . $e->getMessage();
+    exit;
 }
 ?>
